@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:first/pages/login.dart';
 
 void main() {
   runApp(const MyApp(
@@ -14,19 +15,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        theme: ThemeData(
-            primaryColor: const Color.fromRGBO(0, 128, 128, 0.99),
-            backgroundColor: Colors.white24),
-        home: Container(
-          child: Center(
-            child: Text(
-              title,
-              textDirection: TextDirection.ltr,
-              style: const TextStyle(
-                fontSize: 25,
-              ),
-            ),
-          ),
-        ));
+      theme:
+          ThemeData(primarySwatch: Colors.teal, backgroundColor: Colors.white),
+      home: const LoginPage(),
+    );
   }
 }
